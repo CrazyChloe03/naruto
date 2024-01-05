@@ -1,65 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Information</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #dddddd;
-            padding: 8px;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>角色卡片</title>
+<style>
+  /* 在这里添加CSS来美化HTML */
+  .card-container {
+    font-family: Arial, sans-serif;
+    width: 300px;
+  }
+  .character-image {
+    width: 100%;
+  }
+  .character-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  .character-stats {
+    text-align: left;
+  }
+  .character-icons {
+    text-align: right;
+  }
+  /* 更多样式可以在这里添加 */
+</style>
 </head>
 <body>
+<div class="card-container">
+  <!-- 角色图片 -->
+  <img src="character-image-path.jpg" alt="角色图片" class="character-image">
 
-    <h1>Character Information</h1>
+  <!-- 角色信息 -->
+  <div class="character-info">
+    <!-- 角色名字、等级和CV -->
+    <div class="character-details">
+      <h3>角色名字</h3>
+      <p>等级: B</p>
+      <p>CV: 声优姓名</p>
+    </div>
+    
+    <!-- 角色图标 -->
+    <div class="character-icons">
+      <img src="icon1-path.png" alt="图标1">
+      <img src="icon2-path.png" alt="图标2">
+      <!-- 其他图标 -->
+    </div>
+  </div>
 
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Character Picture</th>
-        </tr>
-        <tr>
-            <td>S/A/B/C</td>
-            <td><img src="character_picture.jpg" alt="Character Picture"></td>
-        </tr>
-    </table>
+  <!-- 角色统计数据 -->
+  <div class="character-stats">
+    <p>角色属性: 1038/2000</p>
+    <p>角色经验: 0</p>
+    <!-- 其他统计数据 -->
+  </div>
 
-    <table>
-        <tr>
-            <th>Skill 1</th>
-            <th>Skill 2</th>
-            <th>Skill 3</th>
-        </tr>
-        <tr>
-            <td>Placeholder Skill 1</td>
-            <td>Placeholder Skill 2</td>
-            <td>Placeholder Skill 3</td>
-        </tr>
-    </table>
-
+  <!-- 角色能力图标 -->
+  <div>
+    <img src="ability1-path.png" alt="能力图标1">
+    <img src="ability2-path.png" alt="能力图标2">
+    <!-- 其他能力图标 -->
+  </div>
+</div>
 </body>
 </html>
